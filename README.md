@@ -3,7 +3,7 @@ A lightweight screen sharing app built with Flask and WebSocket.
 This lets you stream your desktop screen to other devices (PC, phone, tablet) in the same local network, all through the browser.
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
-![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![Python](https://img.shields.io/badge/Python-3.13%2B-blue)
 
 ---
 
@@ -20,10 +20,11 @@ This lets you stream your desktop screen to other devices (PC, phone, tablet) in
 
 ## Requirements
 
-- Python 3.10 or newer  
-- OS: (I only test this apps on windows) but im sure it'll works on Linux or MacOS
-- A local network (LAN/Wi-Fi)  
-- Google Chrome, Firefox, or other modern browser
+- Python 3.13 or newer  
+- Operating System: Tested on Windows, but should also work on Linux and macOS  
+- A local network connection (LAN or Wi-Fi)  
+- A modern web browser (e.g. Google Chrome, Firefox, etc.)  
+- At least one other device to access the shared screen
 
 ---
 
@@ -57,10 +58,11 @@ python start.py
 You will see this in the terminal:
 ```bash
 Akses aplikasi dari web browser dan masukkan URL:
-  192.168.5.199:5000
+  xxx.xxx.xxx.xxx:5000
     Pastikan anda menulis juga :5000 pada web browser
 ```
-Then, open the given IP (with :5000) in a browser on another device.
+Then, open the given IP (with :5000) in a browser on another device. (ex: 192.168.2.100:5000)
+
 To stop the apps, press CTRL+C in terminal.
 
 ---
