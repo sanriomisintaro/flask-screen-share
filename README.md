@@ -78,16 +78,18 @@ Akses aplikasi dari web browser dan masukkan URL:
 ```
 Then, open the given IP (with :5000) in a browser on another device. (ex: 192.168.2.100:5000)
 
-To stop the apps, press CTRL+C in terminal.
+To stop the App, press CTRL+C in terminal.
 
 ---
 
 ## Security Notes
 
-- This project is meant for local/private network use only
-- No authentication or encryption is implemented
-- Do not expose to the internet without additional layers (e.g. reverse proxy, TLS, password)
-- Please Stop the apps after the class is over or just close the terminal to stop the running apps.
+- This project is meant for local/private network use only.
+- No authentication, encryption, or access control is implemented.
+- Do not expose to the internet without additional layers (e.g. reverse proxy, TLS, password).
+- Always stop the app after use by pressing Ctrl+C in the terminal, or closing the terminal window.
+
+**IMPORTANT:** Leaving the app running unattended may pose privacy or security risks on shared networks.
 
 ---
 
