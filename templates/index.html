@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FMIPA UNSRAT - Screen Share</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Socket.IO (lokal, jika ingin CDN sudah disapkan di komentar bawah -->
+    <!-- <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>-->
+    <script src="{{ url_for('static', filename='js/web-socket.js') }}"></script>
+</head>
+<body>
+    <!-- Screen Area -->
+    <div id="video-container">
+        <img id="screen" width="80%" alt="Live screen will appear here">
+        <div id="button-container">
+            <button id="fullscreenBtn">[&nbsp;&nbsp;] Fullscreen</button>
+        </div>
+    </div>
+
+    <!-- Main WebSocket handler -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

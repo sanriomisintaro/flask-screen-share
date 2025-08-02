@@ -1,0 +1,55 @@
+/* === Global Styles === */
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* === Header === */
+h1 {
+    text-align: center;
+    font-weight: 500;
+    color: #2c3e50;
+    margin: 20px 0;
+}
+
+/* === Video Container === */
+#video-container {
+    max-width: 100%;
+    padding: 0 5vw; /* beri margin kanan dan kiri 5% viewport width */
+    box-sizing: border-box;
+}
+
+/* === Streamed Screen === */
+#screen {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* === Fullscreen Button === */
+#button-container {
+    text-align: center;
+    margin: 16px 0;
+}
+
+#fullscreenBtn {
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.25s ease;
+}
+
+#fullscreenBtn:hover {
+    background-color: #357abd;
+}
