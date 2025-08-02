@@ -7,6 +7,21 @@ This lets you stream your desktop screen to other devices (PC, phone, tablet) in
 
 ---
 
+## How It Works
+This app uses Flask and WebSocket to capture your screen and stream it to other devices on the same network in real time:
+
+- Flask serves the HTML interface (via Jinja templates).
+- Flask-SocketIO (with eventlet) enables WebSocket communication between the server and client.
+- MSS captures the primary monitor’s screen as an image every ~100ms.
+- OpenCV encodes the image into a JPEG format.
+- The JPEG is base64-encoded so it can be sent as text.
+- The client receives the image via WebSocket and updates the <img> element instantly.
+- The server logs the number of unique IPs that have connected.
+
+The result: a lightweight screen viewer that updates live in any browser and no app installation needed.
+
+---
+
 ## Features
 
 - Real-time screen capture and streaming (~10 FPS)
