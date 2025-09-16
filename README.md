@@ -80,6 +80,7 @@ Then, open the given IP (with :5000) in a browser on another device. (ex: 192.16
 
 To stop the App, press CTRL+C in terminal.
 
+![Console output when starting the server](docs/assets/readme/console.png)
 ---
 
 ## Security Notes

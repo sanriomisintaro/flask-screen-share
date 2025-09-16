@@ -80,10 +80,17 @@ def get_client_ip():
 if __name__ == '__main__':
     try:
         local_ip = get_local_ip()
-        print("\nAkses aplikasi dari web browser dan masukkan URL:")
-        print(f"  {local_ip}:5000\n")
-        print(f"    Pastikan anda menulis juga :5000 pada web browser\n")
+        url = f"http://{local_ip}:5000"
+        print("\nOpen a web browser (any device on the same network) and go to:")
+        print(f"  {url}\n")
+        print("Note: include the ':5000' port in the address.")
+        print("Press Ctrl+C here to stop the server.\n")
+        print("Close this console/terminal will also stop the server.\n")
         socketio.run(app, host='0.0.0.0', port=5000)
     except KeyboardInterrupt:
-        print("\nServer dihentikan oleh pengguna.")
+        print("\nServer stopped by user.")
         sys.exit(0)
+    except OSError as e:
+        print(f"\nCould not start the server: {e}")
+        print("Is port 5000 already in use? Try a different port.")
+        sys.exit(1)

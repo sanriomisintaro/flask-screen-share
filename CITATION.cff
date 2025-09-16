@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: "flask-screen-share"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Sintaro
+    given-names: Sanriomi
+    orcid: "https://orcid.org/0000-0002-7188-307X"
+repository-code: "https://github.com/sanriomisintaro/flask-screen-share"
+url: "https://github.com/sanriomisintaro/flask-screen-share"
+abstract: "Lightweight LAN screen streaming with Flask-SocketIO: MSS capture -> OpenCV JPEG -> Socket.IO to any browser."
+keywords: [Flask, Socket.IO, screen capture, JPEG, real-time, LAN]
+license: MIT
+version: "v0.1.0"
